@@ -1,3 +1,4 @@
 dbt debug -> Check whether configuration is fine or not
 dbt run -> to run the set files
 dbt run --full-refresh -> to run files along with overwriting
+dbt run -m staging.stg_customer -> To run specific model file
