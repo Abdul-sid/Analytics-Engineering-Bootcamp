@@ -31,8 +31,8 @@ Data Warehouse Layer: Final layer with star schema structure for analytics and r
 2. ELT Process
 dbt: Managed transformations using a series of dbt models, staging data, and building the final reporting tables.
 <br/><br/>Staging Models:
-* staging: clean and prepare data.
-* warehouse: Fact and dimension tables.
+* Staging: clean and prepare data.
+* Warehouse: Fact and dimension tables.
 * OBT (One Big Table): A wide table that consolidates key business metrics.
 3. Data Visualization
 Google Data Studio: Connected the OBT to Looker Studio for data exploration and dashboard creation.
