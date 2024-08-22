@@ -39,7 +39,6 @@ Google Data Studio: Connected the OBT to Looker Studio for data exploration and 
 Key Visuals: Sales trends, top customers, product performance, etc.
 
 # 📂 Folder Structure
-bash
 ```bash
 ├── dbt_project.yml                        #  dbt project configurations
 ├── models/                                # dbt models for transformations
