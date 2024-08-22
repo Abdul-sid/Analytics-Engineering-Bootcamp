@@ -30,7 +30,7 @@ Staging Layer: Transformation of raw data into intermediate tables with cleaned 
 Data Warehouse Layer: Final layer with star schema structure for analytics and reporting.
 2. ELT Process
 dbt: Managed transformations using a series of dbt models, staging data, and building the final reporting tables.
-Staging Models:
+< br / >< br / >Staging Models:
 * staging: clean and prepare data.
 * warehouse: Fact and dimension tables.
 * OBT (One Big Table): A wide table that consolidates key business metrics.
