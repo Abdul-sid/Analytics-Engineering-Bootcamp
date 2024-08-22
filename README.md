@@ -39,7 +39,7 @@ Key Visuals: Sales trends, top customers, product performance, etc.
 
 # 📂 Folder Structure
 bash
-Copy code
+```bash
 ├── dbt_project.yml              # dbt project configurations
 ├── models/                      # dbt models for transformations
 │   ├── staging/                 # Raw to staging transformations
@@ -48,3 +48,4 @@ Copy code
 ├── data/                        # Initial data (Northwind CSVs)
 ├── dashboards/                  # Google Data Studio links/screenshots
 ├── README.md                    # Project documentation (this file)
+```
