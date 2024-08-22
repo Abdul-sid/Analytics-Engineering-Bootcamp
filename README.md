@@ -28,10 +28,11 @@ BigQuery Configuration: Configured datasets, optimized queries, and managed acce
 Data Lake Layer: Raw Northwind data ingested from source files (CSV/JSON) and stored in BigQuery.
 Staging Layer: Transformation of raw data into intermediate tables with cleaned data.
 Data Warehouse Layer: Final layer with star schema structure for analytics and reporting.
-2. ETL Process
+2. ELT Process
 dbt: Managed transformations using a series of dbt models, staging data, and building the final reporting tables.
-Staging Models: _stg models clean and prepare data.
-Core Models: Fact and dimension tables.
+Staging Models:
+staging: clean and prepare data.
+warehouse: Fact and dimension tables.
 OBT (One Big Table): A wide table that consolidates key business metrics.
 3. Data Visualization
 Google Data Studio: Connected the OBT to Looker Studio for data exploration and dashboard creation.
@@ -40,12 +41,11 @@ Key Visuals: Sales trends, top customers, product performance, etc.
 # 📂 Folder Structure
 bash
 ```bash
-├── dbt_project.yml              # dbt project configurations
-├── models/                      # dbt models for transformations
-│   ├── staging/                 # Raw to staging transformations
-│   ├── core/                    # Core transformations (fact & dimension tables)
-│   ├── marts/                   # Business metrics, One Big Table
-├── data/                        # Initial data (Northwind CSVs)
-├── dashboards/                  # Google Data Studio links/screenshots
-├── README.md                    # Project documentation (this file)
+├── dbt_project.yml                        #  dbt project configurations
+├── models/                                # dbt models for transformations
+│   ├── staging/                           # Raw to staging transformations
+│   ├── warehouse/                         # Core transformations (fact & dimension tables)
+│   ├── analytics.obt/                     # One Big Table Model for Reporting
+├── Northwind_Sales_Report.pdf/            # Google Data Studio links/screenshots
+├── README.md                              # Project documentation (this file)
 ```
