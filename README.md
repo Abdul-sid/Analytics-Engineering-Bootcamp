@@ -48,3 +48,6 @@ Key Visuals: Sales trends, top customers, product performance, etc.
 ├── Northwind_Sales_Report.pdf/            # Google Data Studio links/screenshots
 ├── README.md                              # Project documentation (this file)
 ```
+# 🔗 Relevant links:
+Github: https://shorturl.at/RjuBv
+Data Studio: https://shorturl.at/2lkSP
